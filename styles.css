@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	outline: none;
+	padding: 0;
+	margin: 0;
 }
 .container {
 	justify-content: space-between;
@@ -9,7 +11,8 @@
 
 .nav-link {
 	text-decoration: none;
-	color: rgb(41, 0, 75);
+	font-weight: 500px;
+	color: rgb(88, 4, 156);
 }
 .navbar-content {
 	justify-content: center;
@@ -17,6 +20,26 @@
 }
 .navbar-nav {
 	justify-content: space-around;
+}
+.banner__section {
+	margin-top: 4rem;
+}
+.card__section > div {
+	margin: 0 auto;
+	justify-content: space-evenly;
+}
+.card_item {
+	display: flex;
+	flex-direction: column;
+	flex: 0.3;
+	align-items: center;
+}
+.card_item > img {
+	width: 100%;
+	object-fit: contain;
+}
+.card__span {
+	color: rgb(80, 0, 145);
 }
 @media only screen and (max-width: 576px) {
 	.navbar {
@@ -39,6 +62,18 @@
 		color: rgb(197, 197, 197);
 	}
 	.nav-link:hover {
-		color: #ffffff !important;
+		color: #ffffff;
+	}
+	.card__section > div {
+		flex-direction: column;
+	}
+	main {
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+		font-size: 0.9rem;
 	}
 }
