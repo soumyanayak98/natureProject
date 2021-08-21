@@ -4,6 +4,7 @@
 	outline: none;
 	padding: 0;
 	margin: 0;
+	border: none;
 }
 .container {
 	justify-content: space-between;
@@ -21,6 +22,12 @@
 .navbar-nav {
 	justify-content: space-around;
 }
+.navbar-toggler {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	display: flex;
+}
 .banner__section {
 	margin-top: 4rem;
 }
@@ -31,7 +38,6 @@
 .card_item {
 	display: flex;
 	flex-direction: column;
-	flex: 0.3;
 	align-items: center;
 }
 .card_item > img {
@@ -40,6 +46,13 @@
 }
 .card__span {
 	color: rgb(80, 0, 145);
+}
+.main__section {
+	background-color: rgb(255, 196, 0);
+}
+footer {
+	background-color: rgb(80, 0, 160);
+	color: white;
 }
 @media only screen and (max-width: 576px) {
 	.navbar {
@@ -55,17 +68,13 @@
 	}
 	.navbar-collapse {
 		background-color: rgb(80, 0, 160);
-		color: white;
 		order: 1;
 	}
 	.nav-link {
-		color: rgb(197, 197, 197);
+		color: rgb(179, 179, 179);
 	}
 	.nav-link:hover {
 		color: #ffffff;
-	}
-	.card__section > div {
-		flex-direction: column;
 	}
 	main {
 		font-size: 0.8rem;
@@ -76,4 +85,59 @@
 	main {
 		font-size: 0.9rem;
 	}
+	.section__img {
+		width: 50%;
+		top: -8rem;
+	}
+}
+
+.ham__container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.6rem;
+	height: 2.6rem;
+	background-color: transparent;
+	transition: all 0.5s ease-in-out;
+}
+.hamburger {
+	width: 70%;
+	height: 3px;
+	background-color: rgb(80, 0, 160);
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+	margin: 0;
+	padding: 0;
+	content: "";
+	position: absolute;
+	width: 70%;
+	height: 3px;
+	background-color: rgb(80, 0, 160);
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+}
+
+.hamburger::before {
+	transform: translate(-48%, -0.6rem);
+}
+.hamburger::after {
+	transform: translate(-48%, 0.6rem);
+}
+
+/* animation */
+.ham__container.open .hamburger {
+	background: transparent;
+	transition: all 0.5s ease-in-out;
+}
+
+.ham__container.open .hamburger::before {
+	transform: rotate(45deg) translate(-9px, 9px);
+}
+.ham__container.open .hamburger::after {
+	transform: rotate(-45deg) translate(-9px, -9px);
 }
