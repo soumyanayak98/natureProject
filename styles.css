@@ -9,27 +9,49 @@
 .container {
 	justify-content: space-between;
 }
-
+.navbar {
+	padding: 0.6rem 0;
+}
 .nav-link {
 	text-decoration: none;
-	font-weight: 500px;
+	font-weight: 500;
 	color: rgb(88, 4, 156);
 }
 .navbar-content {
 	justify-content: center;
-	margin: 0 5px;
 }
 .navbar-nav {
-	justify-content: space-around;
+	justify-content: space-between;
+}
+.navbar-brand {
+	display: none;
 }
 .navbar-toggler {
-	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 	padding: 0 !important;
 	display: flex;
 }
+.nav-item.logo {
+	padding: 0 0.5rem;
+}
 .banner__section {
 	margin-top: 4rem;
+	padding: 1rem;
+	background-color: rgb(88, 4, 156);
+}
+.carousel .carousel-item {
+	height: 400px;
+}
+
+.carousel-item img {
+	width: 100%;
+	object-fit: fill;
+	min-height: 400px;
+}
+.carousel-control {
+	width: 25%;
+	height: 20%;
+	object-fit: contain;
 }
 .card__section > div {
 	margin: 0 auto;
@@ -58,17 +80,16 @@ footer {
 	.navbar {
 		padding-left: 0;
 		padding-right: 0;
-		justify-content: flex-end;
 		padding-bottom: 0;
+		justify-content: flex-end;
 	}
 	.navbar-content {
 		justify-content: space-between;
-		padding: 0.5rem;
+		padding: 0 0.5rem 0.5rem 0.5rem;
 		flex-grow: 1;
 	}
 	.navbar-collapse {
 		background-color: rgb(80, 0, 160);
-		order: 1;
 	}
 	.nav-link {
 		color: rgb(179, 179, 179);
@@ -79,15 +100,35 @@ footer {
 	main {
 		font-size: 0.8rem;
 	}
+	.nav-item.logo {
+		display: none;
+	}
+	.navbar-brand {
+		display: block;
+	}
+	.carousel .carousel-item {
+		height: 200px;
+	}
+
+	.carousel-item img {
+		width: 100%;
+		object-fit: cover;
+		min-height: 200px;
+	}
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 576px) {
 	main {
 		font-size: 0.9rem;
 	}
-	.section__img {
-		width: 50%;
-		top: -8rem;
+	.carousel .carousel-item {
+		height: 300px;
+	}
+
+	.carousel-item img {
+		width: 100%;
+		object-fit: fill;
+		min-height: 300px;
 	}
 }
 
@@ -132,7 +173,7 @@ footer {
 /* animation */
 .ham__container.open .hamburger {
 	background: transparent;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .ham__container.open .hamburger::before {
