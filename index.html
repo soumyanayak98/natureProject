@@ -67,67 +67,69 @@
 			</nav>
 		</header>
 		<main>
-			<section class="banner__section container">
-				<div class="row">
-					<div
-						id="myCarousel"
-						class="carousel slide"
-						data-bs-ride="carousel"
-						data-bs-interval="0"
-					>
-						<div class="carousel-inner" role="listbox">
-							<div class="carousel-item active">
-								<img
-									class="d-block w-100"
-									src="./images/kunal-shinde--f0YLss50Bs-unsplash.jpg"
-									alt="First slide"
-								/>
+			<section class="banner__section">
+				<div class="container">
+					<div class="row">
+						<div
+							id="myCarousel"
+							class="carousel slide"
+							data-bs-ride="carousel"
+							data-bs-interval="0"
+						>
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<img
+										class="d-block w-100"
+										src="./images/kunal-shinde--f0YLss50Bs-unsplash.jpg"
+										alt="First slide"
+									/>
+								</div>
+								<div class="carousel-item">
+									<img
+										class="d-block w-100"
+										src="./images/adam-kool-ndN00KmbJ1c-unsplash.jpg"
+										alt="First slide"
+									/>
+								</div>
+								<div class="carousel-item">
+									<img
+										class="d-block w-100"
+										src="./images/nasa-Q1p7bh3SHj8-unsplash.jpg"
+										alt="First slide"
+									/>
+								</div>
 							</div>
-							<div class="carousel-item">
+							<a
+								href="#myCarousel"
+								class="carousel-control-prev"
+								role="button"
+								data-bs-slide="prev"
+							>
 								<img
-									class="d-block w-100"
-									src="./images/adam-kool-ndN00KmbJ1c-unsplash.jpg"
-									alt="First slide"
+									class="carousel-control"
+									src="./images/leftArrow.jpg"
+									alt="leftArrow"
 								/>
-							</div>
-							<div class="carousel-item">
+							</a>
+							<a
+								href="#myCarousel"
+								class="carousel-control-next"
+								role="button"
+								data-bs-slide="next"
+							>
 								<img
-									class="d-block w-100"
-									src="./images/nasa-Q1p7bh3SHj8-unsplash.jpg"
-									alt="First slide"
+									class="carousel-control"
+									src="./images/rightArrow.jpg"
+									alt="rightArrow"
 								/>
-							</div>
+							</a>
 						</div>
-						<a
-							href="#myCarousel"
-							class="carousel-control-prev"
-							role="button"
-							data-bs-slide="prev"
-						>
-							<img
-								class="carousel-control"
-								src="./images/leftArrow.jpg"
-								alt="leftArrow"
-							/>
-						</a>
-						<a
-							href="#myCarousel"
-							class="carousel-control-next"
-							role="button"
-							data-bs-slide="next"
-						>
-							<img
-								class="carousel-control"
-								src="./images/rightArrow.jpg"
-								alt="rightArrow"
-							/>
-						</a>
 					</div>
 				</div>
 			</section>
 			<section class="card__section container p-2">
 				<div class="row">
-					<div class="card_item col-sm-4">
+					<div class="card_item col-sm-4 align-items-start">
 						<img src="./images/jay-mantri-TFyi0QOx08c-unsplash.jpg" alt="" />
 						<div class="card__body mt-2">
 							<h5>Lorem ipsum sit amet.</h5>
@@ -138,7 +140,7 @@
 							<span class="card__span">Read more</span>
 						</div>
 					</div>
-					<div class="card_item col-sm-4">
+					<div class="card_item col-sm-4 align-items-start">
 						<img src="./images/kunal-shinde--f0YLss50Bs-unsplash.jpg" alt="" />
 						<div class="card__body mt-2">
 							<h5>Lorem ipsum sit amet.</h5>
@@ -149,7 +151,7 @@
 							<span class="card__span">Read more</span>
 						</div>
 					</div>
-					<div class="card_item col-sm-4">
+					<div class="card_item col-sm-4 align-items-start">
 						<img src="./images/adam-kool-ndN00KmbJ1c-unsplash.jpg" alt="" />
 						<div class="card__body mt-2">
 							<h5>Lorem ipsum sit amet.</h5>
@@ -159,6 +161,34 @@
 							</p>
 							<span class="card__span">Read more</span>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container quotes pb-4">
+				<div class="row"></div>
+				<div class="row p-2 justify-content-center">
+					<div class="row">
+						<div class="col-sm-6 hidesm"><hr /></div>
+						<div class="col"><hr /></div>
+					</div>
+					<div class="col-sm-6 text-center text-justify border-end">
+						<p>
+							<em>
+								"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+								recusandae maiores distinctio magnam, ab et quasi laborum soluta
+								ea dicta?"</em
+							>
+						</p>
+					</div>
+					<hr class="d-sm-none w-50" />
+					<div class="col-sm-6 text-center text-justify">
+						<p>
+							<em>
+								"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Itaque exercitationem animi ipsum quis omnis ab consequuntur
+								alias sequi aspernatur illo."</em
+							>
+						</p>
 					</div>
 				</div>
 			</section>

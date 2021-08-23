@@ -28,6 +28,8 @@
 .navbar-nav {
 	flex: 0.7;
 	justify-content: space-between;
+	align-items: center;
+	font-size: 1rem;
 }
 .navbar-brand {
 	display: none;
@@ -75,8 +77,11 @@
 .card__span {
 	color: rgb(80, 0, 145);
 }
-.main__section {
-	background-color: rgb(255, 196, 0);
+.quotes {
+	color: rgba(78, 0, 155, 0.604);
+}
+.border-end {
+	border-color: rgba(78, 0, 155, 0.604);
 }
 footer {
 	background-color: rgb(80, 0, 160);
@@ -104,7 +109,7 @@ footer {
 		color: #ffffff;
 	}
 	main {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 	.nav-item.logo {
 		display: none;
@@ -121,11 +126,18 @@ footer {
 		object-fit: cover;
 		min-height: 200px;
 	}
+
+	.hidesm {
+		display: none;
+	}
+	.border-end {
+		border: none !important;
+	}
 }
 
 @media (min-width: 576px) {
 	main {
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 	.carousel .carousel-item {
 		height: 300px;
