@@ -18,9 +18,7 @@
 	font-weight: 500;
 	color: rgb(88, 4, 156);
 }
-.navbar-content {
-	justify-content: center;
-}
+.navbar-content,
 .navbar-collapse {
 	display: flex;
 	justify-content: center;
@@ -74,18 +72,74 @@
 	width: 100%;
 	object-fit: contain;
 }
-.card__span {
+.card__span,
+.main__section,
+.last__section {
 	color: rgb(80, 0, 145);
 }
+.last__section {
+	margin-top: 1rem;
+}
+.cover__section {
+	height: 16rem;
+}
+.main__section {
+	background-color: rgb(255, 217, 0);
+	height: 12rem;
+	position: relative;
+}
 .quotes {
-	color: rgba(78, 0, 155, 0.604);
+	color: rgba(33, 0, 67, 0.645);
 }
 .border-end {
-	border-color: rgba(78, 0, 155, 0.604);
+	border-right: 1px solid rgba(69, 0, 126, 0.35) !important ;
 }
 footer {
 	background-color: rgb(80, 0, 160);
 	color: white;
+}
+.image {
+	position: absolute;
+	top: 3.6rem;
+}
+.image > img {
+	width: 60%;
+}
+@media (max-width: 1048px) {
+	.image {
+		top: 5.2rem;
+	}
+	.image > img {
+		width: 65%;
+	}
+}
+@media (max-width: 899px) {
+	.image {
+		top: 5.6rem;
+	}
+	.image > img {
+		width: 70%;
+	}
+}
+@media (max-width: 768px) {
+	main {
+		font-size: 0.8rem;
+	}
+	.carousel .carousel-item {
+		height: 300px;
+	}
+
+	.carousel-item img {
+		width: 100%;
+		object-fit: fill;
+		min-height: 300px;
+	}
+	.image {
+		top: 4.5rem;
+	}
+	.image > img {
+		width: 80%;
+	}
 }
 @media only screen and (max-width: 576px) {
 	.navbar {
@@ -111,7 +165,8 @@ footer {
 	main {
 		font-size: 0.7rem;
 	}
-	.nav-item.logo {
+	.nav-item.logo,
+	.hidesm {
 		display: none;
 	}
 	.navbar-brand {
@@ -120,36 +175,37 @@ footer {
 	.carousel .carousel-item {
 		height: 200px;
 	}
-
 	.carousel-item img {
 		width: 100%;
 		object-fit: cover;
 		min-height: 200px;
 	}
-
-	.hidesm {
-		display: none;
-	}
 	.border-end {
 		border: none !important;
 	}
-}
-
-@media (min-width: 576px) {
-	main {
-		font-size: 0.8rem;
+	.image {
+		top: 3rem;
 	}
-	.carousel .carousel-item {
-		height: 300px;
-	}
-
-	.carousel-item img {
-		width: 100%;
-		object-fit: fill;
-		min-height: 300px;
+	.image > img {
+		width: 70%;
 	}
 }
-
+@media only screen and (max-width: 464px) {
+	.image {
+		top: 4.2rem;
+	}
+	.image > img {
+		width: 80%;
+	}
+}
+@media (max-width: 348px) {
+	.image {
+		top: 5.5rem;
+	}
+	.image > img {
+		width: 90%;
+	}
+}
 .ham__container {
 	position: relative;
 	display: flex;
