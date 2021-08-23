@@ -10,6 +10,7 @@
 	justify-content: space-between;
 }
 .navbar {
+	display: flex;
 	padding: 0.6rem 0;
 }
 .nav-link {
@@ -20,7 +21,12 @@
 .navbar-content {
 	justify-content: center;
 }
+.navbar-collapse {
+	display: flex;
+	justify-content: center;
+}
 .navbar-nav {
+	flex: 0.7;
 	justify-content: space-between;
 }
 .navbar-brand {
