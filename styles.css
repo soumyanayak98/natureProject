@@ -85,7 +85,7 @@
 	color: rgb(80, 0, 145);
 }
 .main__section {
-	background: linear-gradient(rgb(255, 238, 0) 46%, transparent 46%);
+	background: linear-gradient(#ffd900 46%, transparent 46%);
 }
 .img-fluid {
 	max-width: 80%;
@@ -95,8 +95,6 @@
 	top: -4rem;
 }
 .quotes {
-	position: relative;
-	top: -2rem;
 	color: rgba(33, 0, 67, 0.645);
 }
 .border-end {
