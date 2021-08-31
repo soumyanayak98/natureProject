@@ -6,9 +6,6 @@
 	margin: 0;
 	border: none;
 }
-.container {
-	justify-content: space-between;
-}
 .navbar {
 	display: flex;
 	padding: 0.7rem 0;
@@ -42,7 +39,7 @@
 }
 .banner__section {
 	margin-top: 3.7rem;
-	padding: 1rem;
+	padding: 1.1rem 0 0.9rem 0;
 	background-color: rgb(88, 4, 156);
 }
 #myCarousel {
@@ -66,15 +63,22 @@
 	width: 25px;
 	object-fit: contain;
 }
-.card__section > div {
-	margin: 0 auto;
+.card__section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.card__section > div.container > div {
+	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 }
 .card_item {
-	padding: 0 7px;
+	flex: 0.32;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 0.5rem;
 }
 .card_item > img {
 	width: 100%;
@@ -104,15 +108,10 @@ footer {
 	background-color: rgb(80, 0, 160);
 	color: white;
 }
-@media (max-width: 1048px) {
-	.container {
-		max-width: 960px;
-	}
-}
 
 @media (max-width: 768px) {
 	.container {
-		max-width: 756px;
+		max-width: 100%;
 	}
 	main {
 		font-size: 0.8rem;
@@ -134,6 +133,9 @@ footer {
 	.img_row {
 		position: relative;
 		top: -3.5rem;
+	}
+	.card_item {
+		flex: 0.325;
 	}
 }
 @media only screen and (max-width: 576px) {
@@ -172,11 +174,11 @@ footer {
 		object-fit: cover;
 		min-height: 200px;
 	}
+	.card__section > div.container > div {
+		flex-direction: column;
+	}
 	.border-end {
 		border: none !important;
-	}
-	.card_item {
-		padding: 0 5px 5px 0;
 	}
 	.img_row {
 		position: relative;
