@@ -11,7 +11,7 @@
 }
 .navbar {
 	display: flex;
-	padding: 1rem 0;
+	padding: 0.7rem 0;
 }
 .nav-link {
 	text-decoration: none;
@@ -41,8 +41,8 @@
 	padding: 0 0.5rem;
 }
 .banner__section {
-	margin-top: 4rem;
-	padding: 1.2rem 0.9rem 0.8rem 0.9rem;
+	margin-top: 3.7rem;
+	padding: 1rem;
 	background-color: rgb(88, 4, 156);
 }
 #myCarousel {
@@ -52,6 +52,7 @@
 	max-height: 345px;
 }
 .carousel-item img {
+	width: 100%;
 	object-fit: fill;
 	min-height: 345px;
 }
@@ -65,16 +66,12 @@
 	width: 25px;
 	object-fit: contain;
 }
-.card__section {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.card__section > div.container > div.row {
+.card__section > div {
+	margin: 0 auto;
 	justify-content: space-between;
-	padding: 0;
 }
 .card_item {
-	padding: 0 7.5px;
+	padding: 0 7px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -86,8 +83,6 @@
 .card__span,
 .main__section {
 	color: rgb(80, 0, 145);
-	font-size: medium;
-	font-weight: 600;
 }
 .main__section {
 	background: linear-gradient(#ffd900 46%, transparent 46%);
@@ -109,9 +104,15 @@ footer {
 	background-color: rgb(80, 0, 160);
 	color: white;
 }
+@media (max-width: 1048px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
 @media (max-width: 768px) {
 	.container {
-		max-width: 746px;
+		max-width: 756px;
 	}
 	main {
 		font-size: 0.8rem;
@@ -129,12 +130,6 @@ footer {
 		justify-content: space-between;
 		align-items: center;
 		font-size: 1rem;
-	}
-	.card__section > div.container > div.row {
-		padding: 0 20px;
-	}
-	.card_item {
-		padding: 0 3.8px;
 	}
 	.img_row {
 		position: relative;
@@ -181,7 +176,7 @@ footer {
 		border: none !important;
 	}
 	.card_item {
-		margin-bottom: 12px;
+		padding: 0 5px 5px 0;
 	}
 	.img_row {
 		position: relative;
