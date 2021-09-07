@@ -64,7 +64,7 @@
 	object-fit: contain;
 }
 .card__section {
-	margin-top: 20px;
+	margin-top: 18px;
 	margin-bottom: 20px;
 }
 .card__section > div.container > div {
@@ -89,7 +89,7 @@
 	color: rgb(80, 0, 145);
 }
 .main__section {
-	background: linear-gradient(#ffd900 54%, transparent 54%);
+	background: linear-gradient(#ffd900 49%, transparent 49%);
 }
 .img-fluid {
 	max-width: 85%;
@@ -100,7 +100,8 @@
 }
 .quotes {
 	color: rgba(33, 0, 67, 0.645);
-	margin-bottom: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 }
 .border-end {
 	border-right: 1px solid rgba(69, 0, 126, 0.35) !important ;
@@ -109,13 +110,18 @@ footer {
 	background-color: rgb(80, 0, 160);
 	color: white;
 }
+@media (max-width: 992px) {
+	.main__section {
+		background: linear-gradient(#ffd900 51%, transparent 51%);
+	}
+}
 
 @media (max-width: 768px) {
 	.container {
 		max-width: 100%;
 	}
 	main {
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	}
 	.carousel .carousel-item {
 		max-height: 280px;
@@ -131,9 +137,6 @@ footer {
 		align-items: center;
 		font-size: 1rem;
 	}
-	.main__section {
-		background: linear-gradient(#ffd900 52%, transparent 52%);
-	}
 	.img_row {
 		position: relative;
 		top: -1.7rem;
@@ -143,6 +146,9 @@ footer {
 	}
 }
 @media only screen and (max-width: 576px) {
+	main {
+		font-size: 1rem;
+	}
 	.navbar {
 		padding-left: 0;
 		padding-right: 0;
@@ -183,21 +189,22 @@ footer {
 	}
 	.border-end {
 		border: none !important;
+		margin-bottom: 0.5rem;
 	}
 	.main__section {
-		background: linear-gradient(#ffd900 48%, transparent 48%);
+		background: linear-gradient(#ffd900 46%, transparent 46%);
 	}
 	.img_row {
 		position: relative;
 		top: -1.5rem;
 	}
 	.quotes {
-		margin-bottom: 0.5rem;
+		margin-top: 0.5rem;
+		margin-bottom: 1rem;
 	}
 }
 
-.ham__container {
-	position: relative;
+.navbar-toggler {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -207,6 +214,7 @@ footer {
 	transition: all 0.5s ease-in-out;
 }
 .hamburger {
+	position: relative;
 	width: 70%;
 	height: 3px;
 	background-color: rgb(80, 0, 160);
@@ -216,33 +224,33 @@ footer {
 
 .hamburger::before,
 .hamburger::after {
-	margin: 0;
-	padding: 0;
-	content: "";
 	position: absolute;
-	width: 70%;
-	height: 3px;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
 	background-color: rgb(80, 0, 160);
 	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
 }
 
 .hamburger::before {
-	transform: translate(-48%, -0.6rem);
+	transform: translateY(-0.6rem);
 }
 .hamburger::after {
-	transform: translate(-48%, 0.6rem);
+	transform: translateY(0.6rem);
 }
 
 /* animation */
-.ham__container.open .hamburger {
+.navbar-toggler.open .hamburger {
 	background: transparent;
 	transition: all 0.2s ease-in-out;
 }
 
-.ham__container.open .hamburger::before {
-	transform: rotate(45deg) translate(-9px, 9px);
+.navbar-toggler.open .hamburger::before {
+	transform: rotate(45deg);
 }
-.ham__container.open .hamburger::after {
-	transform: rotate(-45deg) translate(-9px, -9px);
+.navbar-toggler.open .hamburger::after {
+	transform: rotate(-45deg);
 }
